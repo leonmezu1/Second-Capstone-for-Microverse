@@ -318,6 +318,9 @@ section .content-wrapper .right-img-banner #righty {
   text-transform: uppercase;
   font-size: 2rem;
 }
+.product-description .price {
+  font-size: 2.5rem;
+}
 
 .product-image {
   -ms-flex-preferred-size: calc(70% - 1rem) !important;

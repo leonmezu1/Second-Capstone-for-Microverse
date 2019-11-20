@@ -279,7 +279,7 @@ section {
 }
 
 .table {
-	display: table;
+  display: table;
   margin: 0 auto;
   padding: 2.5rem;
 }
@@ -293,7 +293,7 @@ section {
 }
 
 .product-description {
-	width: 30%;
+  width: 30%;
 
   .highlights {
     padding: 2rem;
@@ -312,6 +312,10 @@ section {
   .details-title {
     text-transform: uppercase;
     font-size: 2rem;
+  }
+
+  .price {
+    font-size: 2.5rem;
   }
 }
 
