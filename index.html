@@ -14,6 +14,10 @@
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="jquery.fullpage.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js"></script>
+
 	<link rel="stylesheet" href="styles/reset-styles.css">
 	<link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -35,25 +39,25 @@
 		<div class="row mx-auto">
 
 
-			<div class="left d-none d-lg-flex flex-column col-lg p-5">
+			<div class="asides d-none d-lg-flex flex-column col-lg p-5">
 				<div class="first-wrapper d-flex flex-column justify-content-between">
 					<div class="category-wrapper d-flex flex-column justify-content-between">
 						<div class="brand-banner mx-4">
 							<p class="nav-brand my-0 bolder">Axel <i class="fas fa-times shrinked"></i> Arigato</p>
 						</div>
-						<a href="#" class="no-deco ml-4">Men</a>
-						<a href="#" class="no-deco ml-4">Women</a>
-						<a href="#" class="no-deco ml-4">Objects</a>
+						<a href="#" class="no-deco my-4 ml-4">Men</a>
+						<a href="#" class="no-deco my-4 ml-4">Women</a>
+						<a href="#" class="no-deco my-4 ml-4">Objects</a>
 					</div>
 					<div class="menu d-flex flex-row align-items-center">
-						<i class="fas fa-bars mr-auto"></i>
+						<i class="fas fa-bars mr-5"></i>
 						<a href="#" class="no-deco ml-4">Menu</a>
 					</div>
 					<div class="second-wrapper d-flex flex-column">
-						<a href="#" class="no-deco ml-4">Instagram</a>
-						<a href="#" class="no-deco ml-4">Facebook</a>
-						<a href="#" class="no-deco ml-4">Twitter</a>
-						<a href="#" class="no-deco ml-4">Youtube</a>
+						<a href="#" class="no-deco mb-3 ml-4">Instagram</a>
+						<a href="#" class="no-deco my-3 ml-4">Facebook</a>
+						<a href="#" class="no-deco my-3 ml-4">Twitter</a>
+						<a href="#" class="no-deco mt-3 ml-4">Youtube</a>
 					</div>
 				</div>
 
@@ -62,7 +66,7 @@
 
 			<div class="main-content col-lg-8">
 				<div
-					class="main-wrapper d-flex d-lg-none flex-column justify-content-center space-between mx-1 position-relative">
+					class="main-wrapper d-flex d-lg-none flex-column justify-content-center space-between m-auto position-relative">
 					<img src="images/AxelLeftsmall.jpg" alt="main-image" class="promo img-fluid centered">
 					<div class="block-banner d-none d-md-flex flex-column justify-content-around">
 						<h1>axel arigato x cat collection</h1>
@@ -73,20 +77,43 @@
 						<a href="#" class="shoplink no-deco">Shop now</a>
 					</div>
 				</div>
+				<div class="desktop-wrapper d-none d-lg-flex flex-column justify-content-center space-between mx-1"
+					id="fullpage">
+					<section class="first-sect d-flex flex-row">
+						<img class="img-fluid" src="images/AxelLeftsmall.jpg" alt="lefty">
+						<div class="right-img-banner w-50">
+							<img class="img-fluid" src="images/AxelRight.jpg" alt="righty">
+							<div class="block-banner-desk">
+								<h1>axel arigato x cat collection</h1>
+								<a href="#" class="shoplink no-deco">Shop now</a>
+							</div>
+						</div>
+					</section>
+					<section class="second">
+						<img src="images/second-sect.jpg" alt="second" class="full">
+					</section>
+					<section class="third">
+						<img src="images/sect-3.jpg" alt="third" class="full">
+					</section>
+					<section class="third">
+						<img src="images/fouth-sect.jpg" alt="fourth" class="full">
+					</section>
+				</div>
 			</div>
 
-			<div class="left d-none d-lg-flex col-lg p-5">
+			<div class="asides d-none d-lg-flex col-lg p-5 justify-content-end">
 				<div class="first-wrapper d-flex flex-column justify-content-between">
 					<div class="category-wrapper d-flex flex-column">
-						<div class="cart-banner mx-4">
+						<div class="cart-banner d-flex ml-4 align-items-center">
 							<span>Cart</span>
-							<span class="cart-items">0</span>
+							<span class="cart-items ml-4 mr-3">0</span>
 						</div>
 						<a href="#" class="no-deco align-self-end my-4  mr-4"><i class="fas fa-search"></i></a>
 						<a href="#" class="no-deco align-self-end my-4 mr-4"><i class="far fa-user"></i></a>
 					</div>
 					<div class="inidicator d-flex flex-column align-items-end mr-4">
-						<div class="number-indicator d-flex flex-row"><span class="just-number">01 / 05</span> <span class="pl-3">&mdash;</span>
+						<div class="number-indicator d-flex flex-row"><span class="just-number">01 / 05</span> <span
+								class="pl-3">&mdash;</span>
 						</div>
 						<span>&ndash;</span>
 						<span>&ndash;</span>
@@ -106,6 +133,10 @@
 
 
 
+	<script type="text/javascript">
+		FastClick.attach(document.body);
+		$('#fullpage').fullpage();
+	</script>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

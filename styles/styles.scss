@@ -113,9 +113,25 @@ nav {
   z-index: 2;
 }
 
+.block-banner-desk {
+  padding: 4rem;
+  max-width: 50%;
+  height: 40rem;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  background-color: #fff;
+  justify-content: space-between;
+  flex-direction: column;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
 /* End of main block styling */
 
-.left {
+.asides {
   position: sticky;
   top: 0;
   height: 100vh;
@@ -131,8 +147,27 @@ nav {
   }
 }
 
+.cart-items {
+  padding: 0.5rem 0.8rem;
+  background: $main;
+  color: $second;
+  border-radius: 5rem;
+}
+
+section {
+  height: 100vh;
+
+  .full {
+    height: 100vh;
+  }
+}
+
+#fullpage {
+  height: fit-content;
+}
+
 @media screen and (min-width: 992px) {
-  .main-content {
+  .main-wrapper {
     display: none;
   }
 
