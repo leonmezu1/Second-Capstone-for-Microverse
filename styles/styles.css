@@ -43,6 +43,7 @@ img {
 .no-deco:hover {
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 
 /* Started styling */
@@ -165,6 +166,12 @@ nav {
     position: relative;
   }
 }
+.vertical-text {
+  -webkit-writing-mode: tb-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: tb-rl;
+}
+
 @media screen and (max-width: 768px) {
   body {
     height: 100%;

@@ -50,7 +50,8 @@ img {
 
   &:hover {
     text-decoration: none;
-    color: darken($main, 30%);
+    color: darken($main, 50%);
+    font-weight: bold;
   }
 }
 
@@ -160,6 +161,10 @@ nav {
     height: 100%;
     position: relative;
   }
+}
+
+.vertical-text {
+  writing-mode: tb-rl;
 }
 
 @media screen and (max-width: 768px) {
