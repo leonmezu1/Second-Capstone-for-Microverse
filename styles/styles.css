@@ -351,7 +351,7 @@ section .content-wrapper .right-img-banner #righty {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    font: #313131;
+    color: #313131;
   }
 
   .product {
