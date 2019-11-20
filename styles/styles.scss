@@ -116,14 +116,14 @@ nav {
 .block-banner-desk {
   padding: 4rem;
   max-width: 50%;
-  height: 40rem;
+  height: 50%;
   bottom: 0;
   right: 0;
   display: flex;
   flex-grow: 1;
-  flex-shrink: 0;
+  flex-shrink: 1;
   background-color: #fff;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   text-transform: uppercase;
   z-index: 2;
@@ -158,12 +158,40 @@ section {
   height: 100vh;
 
   .full {
-    height: 100vh;
+    height: 100%;
   }
+
+  .content-wrapper {
+		height: 100%;
+    #lefty {
+      width: 65%;
+    }
+
+    .right-img-banner {
+      width: 35%;
+
+      #righty {
+        max-height: 50%;
+      }
+    }
+  }
+}
+
+.first-sect {
+  overflow: hidden;
+}
+
+#righty {
+  height: 50% !important;
+}
+
+.vertical-text {
+  writing-mode: tb-rl;
 }
 
 #fullpage {
   height: fit-content;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 992px) {
@@ -196,10 +224,6 @@ section {
     height: 100%;
     position: relative;
   }
-}
-
-.vertical-text {
-  writing-mode: tb-rl;
 }
 
 @media screen and (max-width: 768px) {

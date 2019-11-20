@@ -115,7 +115,7 @@ nav {
 .block-banner-desk {
   padding: 4rem;
   max-width: 50%;
-  height: 40rem;
+  height: 50%;
   bottom: 0;
   right: 0;
   display: -webkit-box;
@@ -124,12 +124,11 @@ nav {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   background-color: #fff;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -165,13 +164,40 @@ section {
   height: 100vh;
 }
 section .full {
-  height: 100vh;
+  height: 100%;
+}
+section .content-wrapper {
+  height: 100%;
+}
+section .content-wrapper #lefty {
+  width: 65%;
+}
+section .content-wrapper .right-img-banner {
+  width: 35%;
+}
+section .content-wrapper .right-img-banner #righty {
+  max-height: 50%;
+}
+
+.first-sect {
+  overflow: hidden;
+}
+
+#righty {
+  height: 50% !important;
+}
+
+.vertical-text {
+  -webkit-writing-mode: tb-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: tb-rl;
 }
 
 #fullpage {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 992px) {
@@ -212,12 +238,6 @@ section .full {
     position: relative;
   }
 }
-.vertical-text {
-  -webkit-writing-mode: tb-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: tb-rl;
-}
-
 @media screen and (max-width: 768px) {
   body {
     height: 100%;
