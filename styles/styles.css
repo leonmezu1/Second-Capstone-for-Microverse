@@ -20,10 +20,6 @@ img {
   width: 95%;
 }
 
-.h100 {
-  height: 90vh;
-}
-
 .centered {
   margin: 0 auto;
 }
@@ -50,20 +46,16 @@ img {
 nav {
   height: 5rem;
   font-size: 2rem;
+  z-index: 5;
 }
 
 /* End of navigation bar */
 /* Start of main block styling */
-.main-wrapper {
-  height: calc(100vh - 5rem);
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  font: #313131;
-}
-
 .promo {
+  z-index: 2;
   width: 80vh;
+  min-width: 5rem;
+  min-height: 5rem;
 }
 
 .text-banner {
@@ -72,16 +64,47 @@ nav {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-.text-banner h1 {
+
+.text-banner h1,
+.block-banner h1 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: 900;
+  line-height: 1.5;
 }
-.text-banner .shoplink {
+.text-banner .shoplink,
+.block-banner .shoplink {
   font-size: 1.8rem;
+}
+
+.block-banner {
+  padding: 4rem;
+  max-width: 50%;
+  height: 40rem;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-color: #fff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 2;
 }
 
 /* End of main block styling */
@@ -90,13 +113,47 @@ nav {
     max-height: 40rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .promo {
     max-height: 90rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .promo {
+    max-height: 97.4rem;
+  }
+
+  .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin: auto 0;
+  }
+
+  .main-wrapper {
+    overflow: hidden;
+    top: 0;
+    height: 100%;
+    position: relative;
   }
 }
 @media screen and (max-width: 768px) {
   body {
     height: 100%;
+  }
+
+  .main-wrapper {
+    height: calc(100vh - 5rem);
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    font: #313131;
   }
 }

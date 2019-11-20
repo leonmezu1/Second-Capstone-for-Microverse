@@ -28,10 +28,6 @@ img {
   width: 95%;
 }
 
-.h100 {
-  height: 90vh;
-}
-
 .centered {
   margin: 0 auto;
 }
@@ -41,11 +37,11 @@ img {
 }
 
 .normal {
-	font-weight: 400;
+  font-weight: 400;
 }
 
 .shrinked {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .no-deco {
@@ -60,36 +56,55 @@ img {
 nav {
   height: $nav-height;
   font-size: 2rem;
+  z-index: 5;
 }
 
 /* End of navigation bar */
 
 /* Start of main block styling */
 
-.main-wrapper {
-  height: calc(100vh - 5rem);
-  flex-grow: 1;
-  font: $main;
-}
-
 .promo {
-  width: 80vh;
+  z-index: 2;
+	width: 80vh;
+	min-width: 5rem;
+	min-height: 5rem;
 }
 
 .text-banner {
   height: auto;
   flex-grow: 1;
+}
 
+.text-banner,
+.block-banner {
   h1 {
     width: fit-content;
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 900;
+    line-height: 1.5;
   }
 
   .shoplink {
     font-size: 1.8rem;
   }
+}
+
+.block-banner {
+  padding: 4rem;
+  max-width: 50%;
+  height: 40rem;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  background-color: #fff;
+  justify-content: space-between;
+  flex-direction: column;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 2;
 }
 
 /* End of main block styling */
@@ -100,14 +115,41 @@ nav {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .promo {
     max-height: 90rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .promo {
+    max-height: 97.4rem;
+  }
+
+  .main-content {
+		display: flex;
+		flex-grow: 1;
+		align-items: center;
+		padding: 0;
+		margin: auto 0;
+  }
+
+  .main-wrapper {
+    overflow: hidden;
+    top: 0;
+    height: 100%;
+    position: relative;
   }
 }
 
 @media screen and (max-width: 768px) {
   body {
     height: 100%;
+  }
+
+  .main-wrapper {
+    height: calc(100vh - 5rem);
+    flex-grow: 1;
+    font: $main;
   }
 }
