@@ -135,6 +135,7 @@ nav {
   position: sticky;
   top: 0;
   height: 100vh;
+  font-size: 1.8rem;
 }
 
 .first-wrapper {
@@ -162,7 +163,8 @@ section {
   }
 
   .content-wrapper {
-		height: 100%;
+    height: 100%;
+
     #lefty {
       width: 65%;
     }
@@ -179,10 +181,6 @@ section {
 
 .first-sect {
   overflow: hidden;
-}
-
-#righty {
-  height: 50% !important;
 }
 
 .vertical-text {

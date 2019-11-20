@@ -143,6 +143,7 @@ nav {
   position: sticky;
   top: 0;
   height: 100vh;
+  font-size: 1.8rem;
 }
 
 .first-wrapper {
@@ -181,10 +182,6 @@ section .content-wrapper .right-img-banner #righty {
 
 .first-sect {
   overflow: hidden;
-}
-
-#righty {
-  height: 50% !important;
 }
 
 .vertical-text {
