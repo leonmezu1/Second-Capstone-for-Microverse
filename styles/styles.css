@@ -1,13 +1,9 @@
 /* vars */
-
 /* Set project basis and tools */
-
 html {
   height: 100%;
   font-size: 10px;
-
   /* Set basis for-rems */
-
   font-family: "Arimo", sans-serif;
 }
 
@@ -44,7 +40,6 @@ img {
   text-decoration: none;
   color: #313131;
 }
-
 .no-deco:hover {
   text-decoration: none;
   color: black;
@@ -52,9 +47,7 @@ img {
 }
 
 /* Started styling */
-
 /* Navigation bar */
-
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -70,9 +63,7 @@ nav {
 }
 
 /* End of navigation bar */
-
 /* Start of main block styling */
-
 .promo {
   z-index: 2;
   width: 80vh;
@@ -83,8 +74,8 @@ nav {
 .text-banner {
   height: auto;
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .text-banner h1,
@@ -97,7 +88,6 @@ nav {
   font-weight: 900;
   line-height: 1.5;
 }
-
 .text-banner .shoplink,
 .block-banner .shoplink {
   font-size: 1.8rem;
@@ -113,18 +103,18 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -ms-flex-negative: 0;
-  flex-shrink: 0;
+      flex-shrink: 0;
   background-color: #fff;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-transform: uppercase;
   position: absolute;
   z-index: 2;
@@ -140,25 +130,23 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -ms-flex-negative: 1;
-  flex-shrink: 1;
+      flex-shrink: 1;
   background-color: #fff;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-transform: uppercase;
   z-index: 2;
 }
 
 /* End of main block styling */
-
 /* Start asides columns */
-
 .asides {
   position: -webkit-sticky;
   position: sticky;
@@ -183,29 +171,22 @@ nav {
 }
 
 /* End of aside columns */
-
 /* Start of the main desktop - section */
-
 section {
   height: 100vh;
 }
-
 section .full {
   height: 100%;
 }
-
 section .content-wrapper {
   height: 100%;
 }
-
 section .content-wrapper #lefty {
   width: 65%;
 }
-
 section .content-wrapper .right-img-banner {
   width: 35%;
 }
-
 section .content-wrapper .right-img-banner #righty {
   max-height: 50%;
 }
@@ -216,8 +197,8 @@ section .content-wrapper .right-img-banner #righty {
 
 .vertical-text {
   -webkit-writing-mode: tb-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: tb-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: tb-rl;
 }
 
 #fullpage {
@@ -228,54 +209,48 @@ section .content-wrapper .right-img-banner #righty {
 }
 
 /* End of the main desktop - section */
-
-/* Start Men Categories */
-
+/* Start Categories */
 .cat-title {
   margin: 3rem 0;
   text-transform: uppercase;
 }
-
 .cat-title h1 {
   font-size: 4rem;
 }
 
 .products-show {
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .product {
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   height: 25rem;
   -ms-flex-preferred-size: calc(33.3%);
-  flex-basis: calc(33.3%);
+      flex-basis: calc(33.3%);
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 1rem;
 }
-
 .product span {
   font-weight: 900;
   font-size: 1.8rem;
   text-transform: uppercase;
 }
-
 .product .product-reference {
   font-weight: 400;
   font-size: 1.4rem;
   top: 1rem;
   left: 1rem;
 }
-
 .product .item-description {
   height: auto;
 }
@@ -285,7 +260,71 @@ section .content-wrapper .right-img-banner #righty {
   display: none !important;
 }
 
-/* End Men Categories */
+/* End Categories */
+/* Start Product overview */
+.product-v-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.product-show-g {
+  max-height: 30rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  overflow: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.product-show-g .image-container-v {
+  -ms-flex-preferred-size: calc(25% - 1rem);
+      flex-basis: calc(25% - 1rem);
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+.product-show-g img {
+  height: 100%;
+  width: 100%;
+}
+
+.table {
+  display: table;
+  margin: 0 auto;
+  padding: 2.5rem;
+}
+
+.numbers {
+  list-style: none;
+}
+.numbers li {
+  display: inline;
+}
+
+.product-description {
+  width: 30%;
+}
+.product-description .highlights {
+  padding: 2rem;
+  line-height: 1.5;
+}
+.product-description .item-model {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+.product-description .material {
+  color: #a0a0a0;
+}
+.product-description .details-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.product-image {
+  -ms-flex-preferred-size: calc(70% - 1rem) !important;
+      flex-basis: calc(70% - 1rem) !important;
+}
+
+/* End Product overview */
 @media screen and (min-width: 992px) {
   .main-wrapper {
     display: none;
@@ -299,7 +338,6 @@ section .content-wrapper .right-img-banner #righty {
     margin-top: 10rem;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .promo {
     height: auto;
@@ -313,11 +351,11 @@ section .content-wrapper .right-img-banner #righty {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0;
     margin: auto 0;
   }
@@ -332,7 +370,7 @@ section .content-wrapper .right-img-banner #righty {
   .product {
     max-height: 30rem;
     -ms-flex-preferred-size: calc(50% - 1rem);
-    flex-basis: calc(50% - 1rem);
+        flex-basis: calc(50% - 1rem);
     margin-bottom: 6rem;
   }
 
@@ -340,7 +378,6 @@ section .content-wrapper .right-img-banner #righty {
     display: none;
   }
 }
-
 @media screen and (max-width: 767px) {
   body {
     height: 100%;
@@ -349,23 +386,21 @@ section .content-wrapper .right-img-banner #righty {
   .main-wrapper {
     height: calc(100vh - 5rem);
     -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    color: #313131;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    font: #313131;
   }
 
   .product {
     height: 22rem;
     -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
+        flex-basis: 100%;
     margin: 4rem auto;
   }
-
   .product:nth-of-type(1) {
     margin-top: 1rem;
   }
 }
-
 @media screen and (max-height: 568px) {
   .promo {
     max-height: 40rem;

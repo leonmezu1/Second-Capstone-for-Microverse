@@ -206,7 +206,7 @@ section {
 
 /* End of the main desktop - section */
 
-/* Start Men Categories */
+/* Start Categories */
 
 .cat-title {
   margin: 3rem 0;
@@ -253,7 +253,73 @@ section {
   display: none !important;
 }
 
-/* End Men Categories */
+/* End Categories */
+
+/* Start Product overview */
+
+.product-v-container {
+  flex-wrap: wrap;
+}
+
+.product-show-g {
+  max-height: 30rem;
+  flex-basis: 100%;
+  overflow: hidden;
+  justify-content: space-between;
+
+  .image-container-v {
+    flex-basis: calc(25% - 1rem);
+    object-fit: scale-down;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.table {
+	display: table;
+  margin: 0 auto;
+  padding: 2.5rem;
+}
+
+.numbers {
+  list-style: none;
+
+  li {
+    display: inline;
+  }
+}
+
+.product-description {
+	width: 30%;
+
+  .highlights {
+    padding: 2rem;
+    line-height: 1.5;
+  }
+
+  .item-model {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+  }
+
+  .material {
+    color: darken($third, 10%);
+  }
+
+  .details-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+}
+
+.product-image {
+  flex-basis: calc(70% - 1rem) !important;
+}
+
+/* End Product overview */
 
 @media screen and (min-width: 992px) {
   .main-wrapper {
