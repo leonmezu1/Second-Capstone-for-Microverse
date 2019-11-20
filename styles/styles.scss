@@ -47,6 +47,11 @@ img {
 .no-deco {
   text-decoration: none;
   color: $main;
+
+  &:hover {
+    text-decoration: none;
+    color: darken($main, 30%);
+  }
 }
 
 /* Started styling */
@@ -109,13 +114,27 @@ nav {
 
 /* End of main block styling */
 
-@media screen and (max-height: 568px) {
-  .promo {
-    max-height: 40rem;
+.left {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.first-wrapper {
+  height: 100%;
+}
+
+.category-wrapper {
+  a:first-of-type {
+    padding-top: 20%;
   }
 }
 
 @media screen and (min-width: 992px) {
+  .main-content {
+    display: none;
+  }
+
   .promo {
     max-height: 90rem;
   }
@@ -127,7 +146,7 @@ nav {
   }
 
   .main-content {
-		width: 100%;
+    width: fit-content;
     display: flex;
     flex-grow: 1;
     align-items: center;
@@ -152,5 +171,11 @@ nav {
     height: calc(100vh - 5rem);
     flex-grow: 1;
     font: $main;
+  }
+}
+
+@media screen and (max-height: 568px) {
+  .promo {
+    max-height: 40rem;
   }
 }
