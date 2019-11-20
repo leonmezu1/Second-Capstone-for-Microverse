@@ -28,6 +28,18 @@ img {
   margin: 0 auto;
 }
 
+.bolder {
+  font-weight: 900;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.shrinked {
+  font-size: 1.5rem;
+}
+
 .no-deco {
   text-decoration: none;
   color: #313131;
