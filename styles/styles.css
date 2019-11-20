@@ -138,6 +138,7 @@ nav {
 }
 
 /* End of main block styling */
+/* Start asides columns */
 .asides {
   position: -webkit-sticky;
   position: sticky;
@@ -161,6 +162,8 @@ nav {
   border-radius: 5rem;
 }
 
+/* End of aside columns */
+/* Start of the main desktop - section */
 section {
   height: 100vh;
 }
@@ -197,6 +200,7 @@ section .content-wrapper .right-img-banner #righty {
   overflow: hidden;
 }
 
+/* End of the main desktop - section */
 @media screen and (min-width: 992px) {
   .main-wrapper {
     display: none;

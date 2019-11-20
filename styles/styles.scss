@@ -131,6 +131,7 @@ nav {
 
 /* End of main block styling */
 
+/* Start asides columns */
 .asides {
   position: sticky;
   top: 0;
@@ -154,6 +155,10 @@ nav {
   color: $second;
   border-radius: 5rem;
 }
+
+/* End of aside columns */
+
+/* Start of the main desktop - section */
 
 section {
   height: 100vh;
@@ -191,6 +196,8 @@ section {
   height: fit-content;
   overflow: hidden;
 }
+
+/* End of the main desktop - section */
 
 @media screen and (min-width: 992px) {
   .main-wrapper {
