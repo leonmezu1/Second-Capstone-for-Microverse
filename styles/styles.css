@@ -118,12 +118,13 @@ nav {
     max-height: 90rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .promo {
-    max-height: 97.4rem;
+    height: auto;
   }
 
   .main-content {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

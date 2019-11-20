@@ -65,9 +65,9 @@ nav {
 
 .promo {
   z-index: 2;
-	width: 80vh;
-	min-width: 5rem;
-	min-height: 5rem;
+  width: 80vh;
+  min-width: 5rem;
+  min-height: 5rem;
 }
 
 .text-banner {
@@ -121,17 +121,18 @@ nav {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .promo {
-    max-height: 97.4rem;
+    height: auto;
   }
 
   .main-content {
-		display: flex;
-		flex-grow: 1;
-		align-items: center;
-		padding: 0;
-		margin: auto 0;
+		width: 100%;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding: 0;
+    margin: auto 0;
   }
 
   .main-wrapper {
