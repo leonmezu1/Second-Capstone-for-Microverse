@@ -1,1 +1,101 @@
-/* Started styling*/
+/* vars */
+
+$main: #313131;
+$second: #fff;
+$third: #b9b9b9;
+$fourth: #f5f5f5;
+
+$nav-height: 5rem;
+
+/* Set project basis and tools */
+
+html {
+	height: 100%;
+  font-size: 10px; /* Set basis for-rems */
+  font-family: "Arimo", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  color: $main;
+}
+
+img {
+  width: 100%;
+}
+
+.w95 {
+  width: 95%;
+}
+
+.h100 {
+  height: 90vh;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.no-deco {
+  text-decoration: none;
+  color: $main;
+}
+
+/* Started styling */
+
+/* Navigation bar */
+
+nav {
+  height: $nav-height;
+  font-size: 2rem;
+}
+
+/* End of navigation bar */
+
+/* Start of main block styling */
+
+.main-wrapper {
+	height: calc(100vh - 5rem);
+	flex-grow: 1;
+  font: $main;
+}
+
+.promo {
+  width: 80vh;
+}
+
+.text-banner {
+	height: auto;
+  flex-grow: 1;
+
+  h1 {
+    width: fit-content;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .shoplink {
+    font-size: 1.8rem;
+  }
+}
+
+/* End of main block styling */
+
+@media screen and (max-height: 568px) {
+  .promo {
+    max-height: 40rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .promo {
+    max-height: 90rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    height: 100%;
+  }
+}
