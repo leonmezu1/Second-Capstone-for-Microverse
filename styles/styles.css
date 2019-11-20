@@ -48,6 +48,14 @@ img {
 
 /* Started styling */
 /* Navigation bar */
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1500;
+  background: #fff;
+}
+
 nav {
   height: 5rem;
   font-size: 2rem;
@@ -201,6 +209,58 @@ section .content-wrapper .right-img-banner #righty {
 }
 
 /* End of the main desktop - section */
+/* Start Men Categories */
+.cat-title {
+  margin: 3rem 0;
+  text-transform: uppercase;
+}
+.cat-title h1 {
+  font-size: 4rem;
+}
+
+.products-show {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 25rem;
+  -ms-flex-preferred-size: calc(33.3%);
+      flex-basis: calc(33.3%);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1rem;
+}
+.product span {
+  font-weight: 900;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.product .product-reference {
+  font-weight: 400;
+  font-size: 1.4rem;
+  top: 1rem;
+  left: 1rem;
+}
+.product .item-description {
+  height: auto;
+}
+
+.vertical-catalogue-text,
+.indicator-cata {
+  display: none !important;
+}
+
+/* End Men Categories */
 @media screen and (min-width: 992px) {
   .main-wrapper {
     display: none;
@@ -208,6 +268,10 @@ section .content-wrapper .right-img-banner #righty {
 
   .promo {
     max-height: 90rem;
+  }
+
+  .product:nth-of-type(n + 4) {
+    margin-top: 10rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -238,8 +302,19 @@ section .content-wrapper .right-img-banner #righty {
     height: 100%;
     position: relative;
   }
+
+  .product {
+    max-height: 30rem;
+    -ms-flex-preferred-size: calc(50% - 1rem);
+        flex-basis: calc(50% - 1rem);
+    margin-bottom: 6rem;
+  }
+
+  .category-wrapper .brand-banner {
+    display: none;
+  }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   body {
     height: 100%;
   }
@@ -250,6 +325,16 @@ section .content-wrapper .right-img-banner #righty {
         -ms-flex-positive: 1;
             flex-grow: 1;
     font: #313131;
+  }
+
+  .product {
+    height: 22rem;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 4rem auto;
+  }
+  .product:nth-of-type(1) {
+    margin-top: 1rem;
   }
 }
 @media screen and (max-height: 568px) {

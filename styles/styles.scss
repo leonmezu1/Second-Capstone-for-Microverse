@@ -59,6 +59,13 @@ img {
 
 /* Navigation bar */
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1500;
+  background: $second;
+}
+
 nav {
   height: $nav-height;
   font-size: 2rem;
@@ -199,6 +206,55 @@ section {
 
 /* End of the main desktop - section */
 
+/* Start Men Categories */
+
+.cat-title {
+  margin: 3rem 0;
+  text-transform: uppercase;
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+.products-show {
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  flex-grow: 1;
+  height: 25rem;
+  flex-basis: calc(33.3%);
+	justify-content: space-between;
+	padding: 0 1rem;
+
+  span {
+    font-weight: 900;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+
+  .product-reference {
+    font-weight: 400;
+    font-size: 1.4rem;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .item-description {
+    height: auto;
+  }
+}
+
+.vertical-catalogue-text,
+.indicator-cata {
+	display: none !important;
+}
+
+/* End Men Categories */
+
 @media screen and (min-width: 992px) {
   .main-wrapper {
     display: none;
@@ -206,6 +262,10 @@ section {
 
   .promo {
     max-height: 90rem;
+  }
+
+  .product:nth-of-type(n + 4) {
+    margin-top: 10rem;
   }
 }
 
@@ -229,9 +289,21 @@ section {
     height: 100%;
     position: relative;
   }
+
+  .product {
+    max-height: 30rem;
+    flex-basis: calc(50% - 1rem);
+    margin-bottom: 6rem;
+  }
+
+  .category-wrapper {
+    .brand-banner {
+      display: none;
+    }
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   body {
     height: 100%;
   }
@@ -240,6 +312,16 @@ section {
     height: calc(100vh - 5rem);
     flex-grow: 1;
     font: $main;
+  }
+
+  .product {
+    height: 22rem;
+    flex-basis: 100%;
+    margin: 4rem auto;
+
+    &:nth-of-type(1) {
+      margin-top: 1rem;
+    }
   }
 }
 
