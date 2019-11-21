@@ -21,6 +21,7 @@
 
 <body class="product-window">
 
+	<input type="checkbox" id="btn-nav" class="checkbox">
 	<header>
 		<nav class="navigation d-flex d-lg-none align-items-center">
 			<div class="brand-banner mx-4">
@@ -29,10 +30,20 @@
 				</a>
 			</div>
 			<div class="nav-icons ml-auto mr-4">
-				<i class="fas fa-bars"></i>
+				<label for="btn-nav" class="btn-label">
+					<div class="header-button"></div>
+				</label>
 			</div>
 		</nav>
 	</header>
+	<nav class="menu mx-auto">
+		<ul class="menu-ul pl-0 text-center">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="men.html">Men</a></li>
+			<li><a href="women.html">Women</a></li>
+			<li><a href="objects.html">Objects</a></li>
+		</ul>
+	</nav>
 
 	<main>
 		<div class="row mx-auto">
@@ -48,7 +59,7 @@
 						<a href="women.html" class="no-deco my-4 ml-4">Women</a>
 						<a href="objects.html" class="no-deco my-4 ml-4">Objects</a>
 					</div>
-					<div class="menu d-flex flex-row align-items-center">
+					<div class="menu-icon d-flex flex-row align-items-center">
 						<i class="fas fa-bars mr-5"></i>
 						<a href="#" class="no-deco ml-4">Menu</a>
 					</div>
