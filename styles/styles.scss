@@ -55,6 +55,10 @@ img {
   }
 }
 
+.fourth-gb {
+  background-color: $fourth;
+}
+
 /* Started styling */
 
 /* Navigation bar */
@@ -258,24 +262,37 @@ section {
 /* Start Product overview */
 
 .product-v-container {
+  height: 100%;
   flex-wrap: wrap;
+
+  & > * {
+    margin: 0.3rem 0;
+    background-color: $fourth;
+  }
 }
 
 .product-show-g {
-  max-height: 30rem;
+  max-height: 18rem;
+  height: auto;
   flex-basis: 100%;
   overflow: hidden;
   justify-content: space-between;
+  background-color: #fff;
 
   .image-container-v {
-    flex-basis: calc(25% - 1rem);
-    object-fit: scale-down;
+    flex-basis: calc(25% - 0.4rem);
   }
 
   img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
   }
+}
+
+.second-container {
+  margin-top: 0.4rem;
+  max-height: 50rem;
 }
 
 .table {
@@ -311,21 +328,56 @@ section {
 
   .details-title {
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: calc(0.5rem + 1vw);
   }
 
   .price {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .product-image {
   flex-basis: calc(70% - 1rem) !important;
 }
 
+.last-container {
+  height: 10rem;
+}
+
+.cart-left {
+  width: 30%;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.right-banner {
+  width: 70%;
+  font-size: 3rem;
+}
+
+.product-h-container,
+.g-images-v,
+.g-main-v {
+  height: fit-content;
+}
+
 /* End Product overview */
 
 @media screen and (min-width: 992px) {
+  .product-v-container,
+  .product-description {
+    flex-direction: column;
+  }
+
+  .second-container {
+    flex-direction: row;
+  }
+
   .main-wrapper {
     display: none;
   }
@@ -337,6 +389,14 @@ section {
   .product:nth-of-type(n + 4) {
     margin-top: 10rem;
   }
+
+  .product-window {
+    min-height: 768px;
+  }
+
+  /* .description-text {
+    font-size: calc(0.3rem + 0.8vw);
+  } */
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -371,11 +431,55 @@ section {
       display: none;
     }
   }
+
+  .image-container-h {
+    max-height: 22vh;
+  }
+
+  .g-images-v {
+    flex-basis: calc(25% - 1rem);
+  }
+
+  .g-main-v {
+    width: 75%;
+    padding-left: 1rem;
+
+    .main-h-image {
+      padding: 5rem 0;
+    }
+
+    .highlights {
+      padding: 6rem 1.5rem;
+    }
+
+    .details {
+      padding: 5rem 1.5rem;
+    }
+
+    .cart-left-n {
+      text-transform: capitalize;
+      font-size: 2rem;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
   body {
     height: 100%;
+  }
+
+  .g-main-v {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .highlights {
+    padding: 1rem 1rem;
+  }
+
+  .details {
+    padding: 1rem 1rem;
   }
 
   .main-wrapper {

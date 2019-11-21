@@ -46,6 +46,10 @@ img {
   font-weight: bold;
 }
 
+.fourth-gb {
+  background-color: #f5f5f5;
+}
+
 /* Started styling */
 /* Navigation bar */
 header {
@@ -263,28 +267,40 @@ section .content-wrapper .right-img-banner #righty {
 /* End Categories */
 /* Start Product overview */
 .product-v-container {
+  height: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.product-v-container > * {
+  margin: 0.3rem 0;
+  background-color: #f5f5f5;
+}
 
 .product-show-g {
-  max-height: 30rem;
+  max-height: 18rem;
+  height: auto;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   overflow: hidden;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #fff;
 }
 .product-show-g .image-container-v {
-  -ms-flex-preferred-size: calc(25% - 1rem);
-      flex-basis: calc(25% - 1rem);
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  -ms-flex-preferred-size: calc(25% - 0.4rem);
+      flex-basis: calc(25% - 0.4rem);
 }
 .product-show-g img {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.second-container {
+  margin-top: 0.4rem;
+  max-height: 50rem;
 }
 
 .table {
@@ -316,10 +332,15 @@ section .content-wrapper .right-img-banner #righty {
 }
 .product-description .details-title {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: calc(0.5rem + 1vw);
 }
 .product-description .price {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .product-image {
@@ -327,8 +348,46 @@ section .content-wrapper .right-img-banner #righty {
       flex-basis: calc(70% - 1rem) !important;
 }
 
+.last-container {
+  height: 10rem;
+}
+
+.cart-left {
+  width: 30%;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.right-banner {
+  width: 70%;
+  font-size: 3rem;
+}
+
+.product-h-container,
+.g-images-v,
+.g-main-v {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 /* End Product overview */
 @media screen and (min-width: 992px) {
+  .product-v-container,
+  .product-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .second-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
   .main-wrapper {
     display: none;
   }
@@ -340,6 +399,14 @@ section .content-wrapper .right-img-banner #righty {
   .product:nth-of-type(n + 4) {
     margin-top: 10rem;
   }
+
+  .product-window {
+    min-height: 768px;
+  }
+
+  /* .description-text {
+    font-size: calc(0.3rem + 0.8vw);
+  } */
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .promo {
@@ -380,10 +447,51 @@ section .content-wrapper .right-img-banner #righty {
   .category-wrapper .brand-banner {
     display: none;
   }
+
+  .image-container-h {
+    max-height: 22vh;
+  }
+
+  .g-images-v {
+    -ms-flex-preferred-size: calc(25% - 1rem);
+        flex-basis: calc(25% - 1rem);
+  }
+
+  .g-main-v {
+    width: 75%;
+    padding-left: 1rem;
+  }
+  .g-main-v .main-h-image {
+    padding: 5rem 0;
+  }
+  .g-main-v .highlights {
+    padding: 6rem 1.5rem;
+  }
+  .g-main-v .details {
+    padding: 5rem 1.5rem;
+  }
+  .g-main-v .cart-left-n {
+    text-transform: capitalize;
+    font-size: 2rem;
+  }
 }
 @media screen and (max-width: 767px) {
   body {
     height: 100%;
+  }
+
+  .g-main-v {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .highlights {
+    padding: 1rem 1rem;
+  }
+
+  .details {
+    padding: 1rem 1rem;
   }
 
   .main-wrapper {
