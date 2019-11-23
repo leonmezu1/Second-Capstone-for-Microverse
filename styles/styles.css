@@ -511,8 +511,9 @@ ul {
 }
 .product-description .details-title,
 .g-main-v .details-title {
+  margin-top: 1rem;
   text-transform: uppercase;
-  font-size: calc(0.5rem + 1vw);
+  font-size: 1.4rem;
 }
 .product-description .description-text,
 .g-main-v .description-text {
@@ -824,6 +825,7 @@ ul {
 
   .details {
     padding: 1rem 1rem;
+    max-height: 25rem;
   }
 
   .main-wrapper {

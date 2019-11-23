@@ -430,6 +430,7 @@ section {
   .image-container-v {
     background-color: $fourth;
     flex-basis: calc(25% - 0.4rem);
+
     img {
       object-fit: contain !important;
     }
@@ -492,8 +493,9 @@ ul {
   }
 
   .details-title {
+    margin-top: 1rem;
     text-transform: uppercase;
-    font-size: calc(0.5rem + 1vw);
+    font-size: 1.4rem;
   }
 
   .description-text {
@@ -706,6 +708,7 @@ ul {
 
   .image-container-h {
     max-height: 22vh;
+
     img {
       max-height: 20rem;
       object-fit: contain;
@@ -776,6 +779,7 @@ ul {
 
   .details {
     padding: 1rem 1rem;
+    max-height: 25rem;
   }
 
   .main-wrapper {
