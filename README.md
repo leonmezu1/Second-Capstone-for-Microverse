@@ -57,6 +57,11 @@ MUST: use of linterns, Bootstrap CSS classes, follow CSS best practices, use of 
 
 https://www.loom.com/share/661e49d048c748fb9836397d2641d709
 
+
+##Redesigned overview video
+
+https://www.loom.com/share/55850965b60742d3b35853da7cbb0a23
+
 <!-- CONTACT -->
 ## Contact
 
