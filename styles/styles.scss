@@ -603,7 +603,8 @@ ul {
 
 .product-h-container,
 .g-images-v {
-  height: fit-content;
+	height: 100vh;
+	flex-basis: calc(25% - 1rem);
 }
 
 /* End Product overview */
