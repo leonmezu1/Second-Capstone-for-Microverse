@@ -271,7 +271,7 @@ nav {
   position: sticky;
   top: 0;
   height: 100vh;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .first-wrapper {
@@ -287,6 +287,15 @@ nav {
   background: #313131;
   color: #fff;
   border-radius: 5rem;
+}
+
+.menu-icon {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu-icon a {
+  margin-top: 0.5rem;
 }
 
 /* End of aside columns */
@@ -378,8 +387,10 @@ section .content-wrapper .right-img-banner #righty {
   margin: 0 auto;
 }
 .product .show .contained {
+  top: 10%;
   -o-object-fit: contain;
      object-fit: contain;
+  max-width: 22rem;
 }
 .product .show .contained:last-of-type {
   -o-object-fit: scale-down;
@@ -677,7 +688,7 @@ ul {
 
   .fluid {
     width: 75%;
-    top: 20%;
+    top: 5%;
     left: 50%;
     -webkit-transform: translate(-50%, 40%);
             transform: translate(-50%, 40%);
@@ -788,6 +799,14 @@ ul {
   .g-main-v .cart-left-n {
     text-transform: capitalize;
     font-size: 2rem;
+  }
+
+  .contained {
+    top: -2rem !important;
+  }
+
+  .contained:last-of-type {
+    top: 0 !important;
   }
 }
 @media screen and (max-width: 767px) {

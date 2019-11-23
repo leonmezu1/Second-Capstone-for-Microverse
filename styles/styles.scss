@@ -251,7 +251,7 @@ nav {
   position: sticky;
   top: 0;
   height: 100vh;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .first-wrapper {
@@ -269,6 +269,14 @@ nav {
   background: $main;
   color: $second;
   border-radius: 5rem;
+}
+
+.menu-icon {
+  align-items: center;
+
+  a {
+    margin-top: 0.5rem;
+  }
 }
 
 /* End of aside columns */
@@ -356,7 +364,9 @@ section {
     }
 
     .contained {
+      top: 10%;
       object-fit: contain;
+      max-width: 22rem;
     }
 
     .contained:last-of-type {
@@ -634,7 +644,7 @@ ul {
 
   .fluid {
     width: 75%;
-    top: 20%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, 40%);
     object-fit: scale-down !important;
@@ -739,6 +749,14 @@ ul {
       text-transform: capitalize;
       font-size: 2rem;
     }
+  }
+
+  .contained {
+    top: -2rem !important;
+  }
+
+  .contained:last-of-type {
+    top: 0 !important;
   }
 }
 
