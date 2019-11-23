@@ -130,6 +130,7 @@ img {
   padding-top: 2rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  font-size: 1.4rem;
 }
 
 .menu-ul {
@@ -182,10 +183,6 @@ nav {
   height: 5rem;
   font-size: 2rem;
   z-index: 5;
-}
-
-.menu {
-  font-size: 1.4rem;
 }
 
 /* End of navigation bar */
@@ -290,6 +287,10 @@ nav {
   height: 100%;
 }
 
+.menu-icon a {
+  margin-top: 0.5rem;
+}
+
 .category-wrapper a:first-of-type {
   padding-top: 20%;
 }
@@ -305,10 +306,6 @@ nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.menu-icon a {
-  margin-top: 0.5rem;
 }
 
 /* End of aside columns */
@@ -497,16 +494,16 @@ section .content-wrapper .right-img-banner #righty {
   flex-basis: calc(25% - 0.4rem);
 }
 
-.product-show-g .image-container-v img {
-  -o-object-fit: contain !important;
-  object-fit: contain !important;
-}
-
 .product-show-g img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.product-show-g .image-container-v img {
+  -o-object-fit: contain !important;
+  object-fit: contain !important;
 }
 
 .second-container {
@@ -533,6 +530,14 @@ ul {
 .numbers li {
   display: inline;
   padding: 0;
+}
+
+.cart-left-t .add-text a {
+  color: #313131;
+}
+
+.cart-left .add-text a {
+  color: #313131;
 }
 
 .numbers li a:hover {
@@ -621,10 +626,6 @@ ul {
   padding: 0 2rem;
 }
 
-.cart-left .add-text a {
-  color: #313131;
-}
-
 .cart-left .add-banner {
   height: 100%;
   font-size: 1.4rem;
@@ -654,10 +655,6 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   padding: 0 2rem;
-}
-
-.cart-left-t .add-text a {
-  color: #313131;
 }
 
 .cart-left-t .add-banner {
@@ -738,7 +735,7 @@ ul {
 
   .fluid {
     width: 75%;
-    top: 5%;
+    top: 25%;
     left: 50%;
     -webkit-transform: translate(-50%, 40%);
     transform: translate(-50%, 40%);
@@ -785,6 +782,7 @@ ul {
     max-height: 30rem;
     -ms-flex-preferred-size: calc(50% - 1rem);
     flex-basis: calc(50% - 1rem);
+    margin-right: 0.5rem;
   }
 
   .product-price {
@@ -802,10 +800,6 @@ ul {
   .product:last-of-type .fluid {
     padding-top: 0.1vh;
     width: 60%;
-  }
-
-  .product {
-    margin-right: 0.5rem;
   }
 
   .product:nth-of-type(2n) {
@@ -909,7 +903,7 @@ ul {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    font: #313131;
+    color: #313131;
   }
 
   .product {
