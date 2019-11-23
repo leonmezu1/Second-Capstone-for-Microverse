@@ -785,6 +785,10 @@ ul {
     margin-right: 0.5rem;
   }
 
+  .product:first-of-type {
+    margin-top: 0.5rem;
+  }
+
   .product-price {
     font-family: 1.4rem !important;
   }
