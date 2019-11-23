@@ -3,8 +3,8 @@ linters:
     config: 'stylelint.config.js'
 files:
     ignore:
-        - 'reset-styles.css'
-        - 'styles.scss'
+        - 'styles/reset-styles.css'
+        - 'styles/styles.scss'
 fixers:
     enable: true
 
