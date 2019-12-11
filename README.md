@@ -3,8 +3,8 @@
 <!-- PROJECT LOGO DESKTOP-->
 <br />
 <p align="center">
-  <a href="https://https://raw.githack.com/leonmezu1/Second-Capstone-for-Microverse/Beta-Branch/index.html">
-    <img src="images/Store.png" alt="phone.png">
+  <a href="https://raw.githack.com/leonmezu1/Second-Capstone-for-Microverse/New--Beta/index.html">
+    <img src="images/LastPicture.png" alt="splash.png">
   </a>
 
   <h3 align="center">Axel x Arigato Sneakers Shop Project for Microverse</h3>
@@ -12,7 +12,7 @@
 
 <br />
 <p align="center">
-  <a href="https://raw.githack.com/leonmezu1/Second-Capstone-for-Microverse/Beta-Branch/index.html">Project-Preview</a>
+  <a href="https://raw.githack.com/leonmezu1/Second-Capstone-for-Microverse/New--Beta/index.html">Project-Preview</a>
 </p>
 
 <!-- ABOUT THE PROJECT -->
@@ -55,7 +55,12 @@ MUST: use of linterns, Bootstrap CSS classes, follow CSS best practices, use of 
 
 ### Project Overview
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wGOIf1ri4Gg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://www.loom.com/share/661e49d048c748fb9836397d2641d709
+
+
+## Redesigned overview video
+
+https://www.loom.com/share/55850965b60742d3b35853da7cbb0a23
 
 <!-- CONTACT -->
 ## Contact
